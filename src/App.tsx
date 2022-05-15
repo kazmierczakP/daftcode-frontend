@@ -16,7 +16,7 @@ function App() {
         <button onClick={handleShowAlert}>Show alert</button>
         <a
           className="App-link"
-          href="https://reactjs.org"
+          href="https://github.com/xkk-opps/daftcode-frontend"
           target="_blank"
           rel="noopener noreferrer"
         >
