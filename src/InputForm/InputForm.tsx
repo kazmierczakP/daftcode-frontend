@@ -47,7 +47,7 @@ export const InputForm = (props?: InputFormProps) => {
             }
         }
         setInputValue(valueToSet)
-    }, [])
+    }, [props])
 
     return <div style={{display: 'flex', flexDirection: 'column', flexWrap: 'wrap'}}>
         {displayError && <div style={{color: 'red'}}>{errorMessage}</div>}
