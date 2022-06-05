@@ -4,7 +4,6 @@ import './App.css';
 import {Navigation} from './navigation';
 import {Routing} from './routing';
 
-
 function App() {
   return (
     <Router>

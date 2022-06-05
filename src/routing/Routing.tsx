@@ -3,6 +3,7 @@ import {Routes, Route} from "react-router-dom";
 import {InputForm} from "../InputForm";
 import {PolicyPage} from "../policy";
 import {AboutPage} from "../about";
+import {ApiPage} from "../api";
 import {ContactPage} from "../contact";
 
 export const Routing = () => {
@@ -13,6 +14,7 @@ export const Routing = () => {
             <Route path='/about' element={<AboutPage/>}/>
             <Route path='/form' element={<InputForm defaultValue={'hello form'}/>}/>
             <Route path='/policy' element={<PolicyPage/>}/>
+            <Route path='/api' element={<ApiPage/>}/>
             <Route path='/contact' element={<ContactPage/>}/>
         </Routes>
     )
