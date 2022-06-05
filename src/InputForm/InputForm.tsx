@@ -7,23 +7,23 @@ interface InputFormProps {
 
 const storageFromKey = 'inputValue'
 
-interface RMRResponseItem {
-    created: string;
-    episode: Array<string>
-    gender: string
-    id: number | string
-    image: string;
-    location: {name: string, url: string}
-    name: string
-    origin: {name: string, url: string}
-    species: string
-    status: string
-    type: string
-    url: string
-}
+// interface RMRResponseItem {
+//     created: string;
+//     episode: Array<string>
+//     gender: string
+//     id: number | string
+//     image: string;
+//     location: {name: string, url: string}
+//     name: string
+//     origin: {name: string, url: string}
+//     species: string
+//     status: string
+//     type: string
+//     url: string
+// }
 
-const apiKey = process.env.REACT_APP_AIRTABLE_API_KEY
-const dbId = process.env.REACT_APP_AIRTABLE_API_TEST_DB_ID
+//const apiKey = process.env.REACT_APP_AIRTABLE_API_KEY
+//const dbId = process.env.REACT_APP_AIRTABLE_API_TEST_DB_ID
 const tableName = 'Table 1'
 //const base = new Airtable({apiKey}).base('%dbId');
 const base = new Airtable({apiKey: 'keyt9ug9p4HIYgoqR'}).base('appyMA6TtwNWi64eq');
@@ -74,7 +74,7 @@ export const InputForm = (props?: InputFormProps) => {
             // records.forEach(function (record: any){
             //     console.log(record);
             // });
-            alert('Value saved in db, value: ${records[0].Name}')
+            alert('Value saved in db, value: {records[0].Name}')
             setInputValue('')
             handleGetAllRecords()
         });
