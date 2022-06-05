@@ -1,25 +1,20 @@
 import React from 'react';
+import {BrowserRouter as Router} from "react-router-dom";
 import './App.css';
-import { InputForm } from './InputForm';
+import {Navigation} from './navigation';
+import {Routing} from './routing';
+
 
 function App() {
-/*const handleShowAlert = () => {
-    alert("Hello react")
-  }*/
   return (
-    <div className="App">
-      <header className="App-header">
-        <InputForm defaultValue='system ready'></InputForm>
-        <a
-          className="App-link"
-          href="https://github.com/xkk-opps/daftcode-frontend"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          RepoLink
-        </a>
-      </header>
-    </div>
+    <Router>
+      <div className="App">
+        <div className="App-header">
+          <Navigation/>
+          <Routing/>
+        </div>
+      </div>
+    </Router>
   );
 }
 
